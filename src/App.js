@@ -1,26 +1,71 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Link} from
+"react-router-dom";
+// import Navbar from './Component/Navbar'
+import Home from './Home'
+import Booking from './Booking'
+import Payment from './Payment'
+import Services from './Services'
+import Contacts from './Contacts'
+import Error from './Error'
+import { FaHome, FaServicestack, FaAlipay, FaBootstrap, FaContao, FaAngleDoubleRight} from 'react-icons/fa'
 
-function App() {
+// import Header from './header_footer/Header'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  <Router>
+   <div className="Sider-Menu"> 
+       <nav className="nav__cont"> 
+        <ul className="nav">
+        <li className="nav__items">
+           <Link to="/">  
+           <FaAngleDoubleRight /></Link>
+           </li>
+           <li className="nav__items">
+            <Link to="/"> Home 
+            <FaHome /></Link>
+          </li>
+          <li className="nav__items">
+            <Link to="/Booking"> Booking 
+            <FaBootstrap /></Link>
+          </li>
+                  <li className="nav__items">
+            <Link to="/Contacts"> Contacts 
+            <FaContao /></Link>
+          </li>
+                  <li className="nav__items">
+            <Link to="/Payment"> Payment 
+            <FaAlipay/></Link>
+          </li>
+                  <li className="nav__items">
+            <Link to="/Services" > Services <FaServicestack /></Link>
+          </li>
+        </ul>
+      </nav>  
+            {/* <Navbar /> */}
+          
 
-export default App;
+              <Route path="/"exact>
+              <Home />
+              </Route>
+              <Route path="/Services">
+              <Services />
+              </Route> 
+              <Route path="/contacts">
+              <Contacts />
+              </Route>
+              <Route path="/Payment">
+              <Payment />
+              </Route>
+              <Route path="/Booking">
+              <Booking />
+              </Route>
+              <Route component={Error} />
+  
+ </div> 
+ 
+   </Router>
+    
+   );
+   }
