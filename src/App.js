@@ -23,23 +23,27 @@ export default function App() {
            <FaAngleDoubleRight /></Link>
            </li>
            <li className="nav__items">
-            <Link to="/"> Home 
-            <FaHome /></Link>
+            <Link to="/">    <FaHome />
+            Home
+            </Link>
           </li>
           <li className="nav__items">
-            <Link to="/Booking"> Booking 
-            <FaBootstrap /></Link>
+            <Link to="/Booking"> <FaBootstrap /> Booking 
+            </Link>
           </li>
                   <li className="nav__items">
-            <Link to="/Contacts"> Contacts 
-            <FaContao /></Link>
+            <Link to="/Contacts"> <FaContao /> 
+            Contacts 
+            </Link>
           </li>
                   <li className="nav__items">
-            <Link to="/Payment"> Payment 
-            <FaAlipay/></Link>
+            <Link to="/Payment"> <FaAlipay/> 
+            Payment 
+            </Link>
           </li>
                   <li className="nav__items">
-            <Link to="/Services" > Services <FaServicestack /></Link>
+            <Link to="/Services" > <FaServicestack />   Services 
+            </Link>
           </li>
         </ul>
       </nav>  

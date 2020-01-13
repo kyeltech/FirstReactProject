@@ -1,23 +1,15 @@
 import React from 'react'
+import Bookingstore from './Component/Bookingstore'
+// import ItemDetails from './Component/Booking/ItemDetails'
 
-
-class Booking extends React.Component{
-    constructor(){
-        super()
-            this.state = {
-
-        }
-    }
-        render() {
-            return (
-                <div className="Header-Bar">
-                   <h1>
-                      Hello from booking page
-                   </h1>
-                </div>
-            )   
-        }
-    }
-
-
-export default Booking
+export default function Booking() {
+    return (
+        <div>
+            <Bookingstore />
+            <br />
+            <div className="Massage-details">
+            <Bookingstore />
+            </div>
+        </div>
+    )
+}

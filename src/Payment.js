@@ -12,7 +12,7 @@ class Payment extends React.Component{
             return (
                 <div className="Header-Bar">
                    <h1>
-                      Hello from Payment page
+                      nothing in here
                    </h1>
                 </div>
             )   

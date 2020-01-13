@@ -3,16 +3,16 @@ const ServeStore = [
     {
         id:"1",
         name:"HomeService",
-        price:1,
-        description: "perfect for those are busy at home and love be attended to at home."
+        price:"00",
+        description: "perfect for those who are busy at home and love be attended to at home."
     },
-    {
+        {
         id:"2",
         name:"OfficeService",
-        price:"0",
+        price:"00",
         description:"busy at the office? we can always come attend to ahoir services over there."
     },
-    {
+        {
         id:"3",
         name:"Booking",
         price:"300",

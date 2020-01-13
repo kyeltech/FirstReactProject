@@ -6,6 +6,7 @@ class Contact extends React.Component {
       this.state = {
         name: '',
         email: '',
+        Purpose:'',
         message: ''
       }
     }
@@ -43,12 +44,27 @@ class Contact extends React.Component {
                <label htmlFor="exampleInputEmail1">Email address</label>
                <input type="email" className="form-control" aria-describedby="emailHelp" placeholder="Email.." required  value={this.state.email} onChange={this.onEmailChange.bind(this)} />
            </div>
+            <label> Purpose: </label>
+            <select
+            value={this.state.Purpose}
+            onChange={this.handleChange}
+            name="favColor"
+            >
+
+            <option value="">not well serviced</option>
+            <option value="">not friendly</option>
+            <option value="">fair enough</option>
+            <option value="">i noticed</option>
+            <option value="">i feel you need to know these</option>
+            </select>
            <div className="form-Message">
                <label htmlFor="message">Message</label>
                <textarea className="form-control" rows="5" placeholder="minimum character  of 10" required value={this.state.message} onChange={this.onMessageChange.bind(this)} />
            </div>
            <button type="submit" className="btn btn-primary">Send it </button>
            </form>
+           <h3 className="info">Contact info:09027243989</h3> 
+           <h3 className="Email">Email:Easy@gmail.com</h3>
     </div>
  );
 }
