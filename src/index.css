@@ -87,7 +87,10 @@
     width: 80px;
   }
   .nav {
-    
+    list-style-position: inherit;
+    position: absolute;
+    display: auto;
+    left: 10px;
   }
   .nav:first-child{
     padding-top: 1.5rem;
@@ -132,13 +135,13 @@
   a:hover a:after{
     opacity: 1;
   }
-  Link{
+  /* Link{
     width: 26px;
     height: 26px;
     position: relative;
-    left: -25px;
+    left: -50px;
     cursor: pointer;
-  }
+  } */
 @media screen and(min-width:600px) {
   width: 32px;
   height: 32px;
